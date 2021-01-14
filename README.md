@@ -1,4 +1,7 @@
-## MCServerBackupManager
+# MCServerBackupManager
 
-# To Start App:
+### To Configure:
+Edit the "Configuration Variables" in `serverManager.py`
+
+### To Start App:
 Run `serverManager.py`
