@@ -7,7 +7,7 @@ import time
 import threading
 
 # Configuration variables ------------------------------
-backupCheckDelay = 1800
+backupCheckDelayInSeconds = 1800
 
 startFile = os.path.normpath("../start.bat")
 
@@ -49,7 +49,7 @@ def startBackupChecker():
         startBackup(curDate)
 
     print("-------------------------")
-    threading.Timer(backupCheckDelay, startBackupChecker).start()
+    threading.Timer(backupCheckDelayInSeconds, startBackupChecker).start()
 
 
 def startBackup(name):
